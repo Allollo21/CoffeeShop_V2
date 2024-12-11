@@ -1,0 +1,74 @@
+/* Footer Styles */
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+/* Footer Base */
+footer {
+    width: 100%;
+    height: 70px;
+    background-color: #222;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2em;
+    position: absolute;
+    bottom: -70px;
+}
+
+/* Copyright Section */
+.copyright p {
+    color: white;
+    font-size: 0.8em;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+
+/* Social Links */
+.social a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 1em;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+/* Social Link Colors */
+.face {
+    background-color: #3D5B94;
+}
+
+.tweet {
+    background-color: #101820;
+}
+
+.linked {
+    background-color: #1E83AE;
+}
+
+.support {
+    background-color: #6dcd9a;
+}
+
+/* Hover Effects */
+.social a:hover {
+    background-color: #222;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+    footer {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+    }
+
+    .copyright p {
+        margin-bottom: 1em;
+    }
+
+    .social a {
+        display: block;
+        margin: 0.5em 0;
+    }
+}

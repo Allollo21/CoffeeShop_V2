@@ -1,0 +1,127 @@
+/* Highlights the active navigation link for the 'menu' page */
+.container .nav .nav-items ul .menu a {
+    color: #eca049; /* Highlight color for active link */
+    
+    /* Creates glowing text effects */
+    text-shadow: 0px 3px 8px #eca049; /* Outer glow */
+    text-shadow: 1px 1px 2px #232126; /* Inner shadow for depth */
+    
+    text-decoration: none; /* Removes link underline */
+}
+
+/* Main body container for products */
+.container .body {
+    margin: 130px auto 100px; /* Centers the body with top and bottom margin */
+    width: 80%; /* Takes up 75% of the viewport width */
+    display: grid; /* Enables CSS Grid layout */
+    gap: 15px; /* Space between grid items */
+    
+    /* Defines the grid layout */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive columns */
+    grid-template-rows: repeat(2, 300px); /* Fixed height for rows */
+    
+    /* Custom grid layout using named areas */
+    grid-template-areas: 
+        "1st 1st 1st 2nd 2nd 2nd 3rd 3rd 3rd 4th 4th 4th"
+        "5th 5th 5th 6th 6th 6th";
+}
+
+/* Styling for each product card */
+.container .body div {
+    background-color: #232126; /* Dark background */
+    border: 2px solid rgba(255, 255, 255, 0.3); /* Semi-transparent border */
+    width: 100%; /* Full width of the grid area */
+    display: flex; /* Enables flex layout */
+    flex-wrap: wrap; /* Allows wrapping of items */
+    justify-content: center; /* Centers items horizontally */
+    align-content: space-evenly; /* Even vertical spacing */
+}
+
+/* Product images */
+.container .body div img {
+    width: 100px; /* Fixed width */
+    height: 100px; /* Fixed height */
+}
+
+/* Product titles */
+.container .body div h4 {
+    width: 100%; /* Full width of the container */
+    margin: -15px auto 0; /* Centers and reduces vertical space */
+    text-align: center; /* Centers text */
+}
+
+/* Product descriptions */
+.container .body div p {
+    font-size: 20px; /* Larger text size */
+    font-weight: bold; /* Bold text */
+    width: 100%; /* Full width of the container */
+    text-align: center; /* Centers text */
+}
+
+/* Adds a price after the product description */
+.container .body div p::after {
+    content: "$20.99"; /* Default price label */
+    margin-left: 4px; /* Space between text and price */
+    font-size: small; /* Smaller text for price */
+    font-weight: 100; /* Light font weight */
+    text-decoration: line-through; /* Strikes through the price */
+}
+
+/* Custom grid area assignments */
+.container .body .product1 { grid-area: 1st; }
+.container .body .product2 { grid-area: 2nd; }
+.container .body .product3 { grid-area: 3rd; }
+.container .body .product4 { grid-area: 4th; }
+.container .body .product5 { grid-area: 5th; }
+.container .body .product6 { grid-area: 6th; }
+
+/* Removing linkstyling of Products names */
+.container .body div a
+{
+    all: unset;
+    cursor: pointer;
+    font-size: 18px;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+/* Underline animation on hover */
+.container .body div a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0;
+    height: 1px;
+    background: #eca049;
+    transition: width 0.3s ease;
+}
+
+.container .body div a:hover {
+    color: #ffffff; /* Change text color */
+}
+
+.container .body div a:hover::after {
+    width: 100%; /* Expand underline */
+}
+
+/* Button styles */
+.container .body button {
+    padding: 12px 30px; /* Inner padding */
+    font-size: 15px; /* Moderate text size */
+    background-color: #eca049; /* Button background color */
+    color: white; /* Text color */
+    box-shadow: 1px 1px 6px 1px #eca049; /* Button glow effect */
+}
+
+/* Hover effect for buttons */
+.container .body button:hover {
+    background-color: #232126; /* Dark background on hover */
+    color: #eca049; /* Text changes to highlight color */
+    border: none; /* Removes border */
+}
+
+footer {
+    position: absolute;
+    bottom: -150px !important;
+}

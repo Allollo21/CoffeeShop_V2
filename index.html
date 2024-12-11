@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login & Registration</title>
+    <link rel="icon" href="https://i.postimg.cc/Jn3wNvv2/Beige-Brown-Minimal-Coffee-Logo.png">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+
+<div class="main">  	
+    <input type="checkbox" id="chk" aria-hidden="true">
+
+    <!-- Registration Form -->
+    <div class="signup">
+        <form action="home.html" method="get">
+            <label for="chk" aria-hidden="true">Sign up</label>
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="tel" name="phone" placeholder="Phone Number" required pattern="[0-9]{11}">
+            <input type="password" name="password" placeholder="Password" required>
+            <button type="submit">Sign up</button>
+        </form>
+    </div>
+
+    <!-- Login Form -->
+    <div class="login">
+        <form action="home.html" method="get">
+            <label for="chk" aria-hidden="true">Login</label>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+</div>
+
+</body>
+</html>
