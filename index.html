@@ -1,38 +1,63 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Login & Registration</title>
+    <!-- Favicon for the website -->
     <link rel="icon" href="https://i.postimg.cc/Jn3wNvv2/Beige-Brown-Minimal-Coffee-Logo.png">
+    <!-- Link to external CSS file -->
     <link rel="stylesheet" href="css/login.css">
 </head>
+
 <body>
 
-<div class="main">  	
-    <input type="checkbox" id="chk" aria-hidden="true">
+    <!-- Main container for login and registration forms -->
+    <div class="main">
+        <!-- Checkbox used for toggling between forms -->
+        <input type="checkbox" id="chk" aria-hidden="true">
 
-    <!-- Registration Form -->
-    <div class="signup">
-        <form action="home.html" method="get">
-            <label for="chk" aria-hidden="true">Sign up</label>
-            <input type="text" name="username" placeholder="Username" required>
-            <input type="email" name="email" placeholder="Email" required>
-            <input type="tel" name="phone" placeholder="Phone Number" required pattern="[0-9]{11}">
-            <input type="password" name="password" placeholder="Password" required>
-            <button type="submit">Sign up</button>
-        </form>
+        <!-- Registration Form Section -->
+        <div class="signup">
+            <form action="home.html" method="get">
+                <!-- Form heading -->
+                <label for="chk" aria-hidden="true">Sign up</label>
+
+                <!-- Username input field -->
+                <input type="text" name="username" placeholder="Username" required>
+
+                <!-- Email input field -->
+                <input type="email" name="email" placeholder="Email" required>
+
+                <!-- Phone number input field with validation pattern -->
+                <input type="tel" name="phone" placeholder="Phone Number" required pattern="[0-9]{11}">
+
+                <!-- Password input field -->
+                <input type="password" name="password" placeholder="Password" required>
+
+                <!-- Submit button for registration -->
+                <button type="submit">Sign up</button>
+            </form>
+        </div>
+
+        <!-- Login Form Section -->
+        <div class="login">
+            <form action="home.html" method="get">
+                <!-- Form heading -->
+                <label for="chk" aria-hidden="true">Login</label>
+
+                <!-- Email input field -->
+                <input type="email" name="email" placeholder="Email" required>
+
+                <!-- Password input field -->
+                <input type="password" name="password" placeholder="Password" required>
+
+                <!-- Submit button for login -->
+                <button type="submit">Login</button>
+            </form>
+        </div>
+
     </div>
-
-    <!-- Login Form -->
-    <div class="login">
-        <form action="home.html" method="get">
-            <label for="chk" aria-hidden="true">Login</label>
-            <input type="email" name="email" placeholder="Email" required>
-            <input type="password" name="password" placeholder="Password" required>
-            <button type="submit">Login</button>
-        </form>
-    </div>
-
-</div>
 
 </body>
+
 </html>

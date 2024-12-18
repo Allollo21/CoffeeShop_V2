@@ -1,7 +1,6 @@
 /* Main content container styling */
 .container .body {
     margin-top: 100px;
-    /* Outer margin for spacing */
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 100px;
@@ -10,25 +9,17 @@
 /* Header text styling */
 .container .body .header {
     text-align: center;
-    /* Centers the header text */
     font-size: 35px;
-    /* Larger font size */
     font-weight: bolder;
-    /* Makes the text bold */
     font-family: system-ui;
-    /* Modern UI font */
     margin-bottom: 50px;
-    /* Space below the header */
     text-shadow: 2px 6px 8px #eca049;
-    /* Adds a glowing effect */
 }
 
 /* Special text highlight within the header */
 .container .body .header span {
     color: #eca049;
-    /* Text color */
     text-shadow: 2px 1px 2px white;
-    /* Glow effect with white */
 }
 
 /* Global "table" column settings */
@@ -36,7 +27,6 @@
     display: flex;
     align-items: center;
     padding: 10px 0;
-    /* border-bottom: 1px solid #eee; */
 }
 
 .column-labels {
@@ -53,11 +43,13 @@
     text-align: center;
 }
 
+/* Product image styling */
 .product-image img {
     max-width: 100px;
     max-height: 100px;
 }
 
+/* Product column layout */
 .product-image,
 .product-details,
 .product-price,
@@ -68,6 +60,7 @@
     text-align: center;
 }
 
+/* Product details styling */
 .product-details {
     text-align: left;
     padding: 0 10px;
@@ -78,6 +71,7 @@
     font-weight: bold;
 }
 
+/* Product title link styling */
 .container .body .products h4 a {
     all: unset;
     cursor: pointer;
@@ -89,11 +83,8 @@
 /* Underline animation on hover */
 .container .body .shopping-cart .product .product-details .product-title a {
     position: relative;
-    /* Required for pseudo-element positioning */
     text-decoration: none;
-    /* Remove default underline */
     color: inherit;
-    /* Inherit the default text color */
 }
 
 .container .body .shopping-cart .product .product-details .product-title a::after {
@@ -101,40 +92,31 @@
     position: absolute;
     left: 0;
     bottom: -3px;
-    /* Position underline slightly below the text */
     width: 0;
     height: 1px;
     background: #eca049;
-    /* Underline color */
     transition: width 0.3s ease;
-    /* Smooth expansion animation */
 }
 
 .container .body .shopping-cart .product .product-details .product-title a:hover {
     color: #ffffff;
-    /* Change text color on hover */
 }
 
 .container .body .shopping-cart .product .product-details .product-title a:hover::after {
     width: 100%;
-    /* Expand underline on hover */
 }
 
+/* Product quantity input styling */
 .product .product-quantity input {
     background-color: black;
-    /* Set background color to black */
     color: white;
-    /* Set text color to white for better contrast */
     border: 1px solid #cccccc6a;
-    /* Optional: Add a border for visibility */
     border-radius: 5px;
-    /* Optional: Add rounded corners */
     padding: 4px;
-    /* Optional: Add padding for a better look */
     font-size: 14px;
-    /* Optional: Adjust font size */
 }
 
+/* Product description styling */
 .product-details .product-description {
     margin-top: 20px;
     font-size: 14px;
@@ -143,16 +125,19 @@
     text-transform: lowercase;
 }
 
+/* Product price and line price styling */
 .product-price,
 .product-line-price {
     font-weight: bold;
 }
 
+/* Product quantity input width */
 .product-quantity input {
     width: 50px;
     text-align: center;
 }
 
+/* Remove product button styling */
 .remove-product {
     padding: 5px 10px;
     background-color: #c66;
@@ -166,16 +151,15 @@
     background-color: #a44;
 }
 
+/* Totals section styling */
 .totals {
     text-align: right;
-    /* Align totals to the right */
     margin-top: 30px;
 }
 
 .totals .totals-item {
     display: flex;
     justify-content: flex-end;
-    /* Right-align each row */
     padding: 5px 0;
     font-size: 1em;
 }
@@ -183,16 +167,15 @@
 .totals .totals-item label {
     flex: 1;
     text-align: right;
-    /* Align labels (Subtotal, Tax, etc.) */
     margin-right: 10px;
 }
 
 .totals .totals-value {
     flex: 0.3;
     text-align: right;
-    /* Align values (71.97, 3.60, etc.) */
 }
 
+/* Checkout button styling */
 .checkout {
     margin-top: 15px;
     padding: 12px 25px;
@@ -211,6 +194,7 @@
     background-color: #494;
 }
 
+/* Footer positioning */
 footer {
     position: absolute;
     bottom: -130px !important;

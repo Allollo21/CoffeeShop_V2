@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
 
+/* Universal box-sizing and margin/padding reset */
 * {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -10,26 +11,22 @@
 /* Highlights the active navigation link for the 'blogs' page */
 .container .nav .nav-items ul .product-details a {
     color: #eca049;
-    /* Highlight color for the active link */
-
-    /* Creates glowing text effects */
     text-shadow: 0px 3px 8px #eca049;
-    /* Outer glow */
     text-shadow: 1px 1px 2px #232126;
-    /* Inner shadow for depth */
-
     text-decoration: none;
-    /* Removes link underline */
 }
 
+/* Body text styling with a custom font */
 body {
     font-family: 'Roboto', sans-serif;
 }
 
+/* Removes text decoration from all links */
 a {
     text-decoration: none;
 }
 
+/* Product card styling */
 .product-card {
     width: 380px;
     position: relative;
@@ -38,6 +35,7 @@ a {
     background: #232126;
 }
 
+/* Badge on the product card, typically for special offers */
 .badge {
     position: absolute;
     left: 0;
@@ -50,6 +48,7 @@ a {
     padding: 3px 10px;
 }
 
+/* Container for product image */
 .product-tumb {
     display: flex;
     align-items: center;
@@ -59,16 +58,19 @@ a {
     background: #232126;
 }
 
+/* Styling for the product image */
 .product-tumb img {
     max-width: 150%;
     max-height: 150%;
     margin-top: 50px;
 }
 
+/* Product details container */
 .product-details {
     padding: 30px;
 }
 
+/* Category styling for the product */
 .product-catagory {
     display: block;
     font-size: 12px;
@@ -78,6 +80,7 @@ a {
     margin-bottom: 18px;
 }
 
+/* Product title link styling */
 .product-details h4 a {
     font-weight: 500;
     display: block;
@@ -88,10 +91,12 @@ a {
     transition: 0.3s;
 }
 
+/* Hover effect for the product title */
 .product-details h4 a:hover {
     color: #fbb72c;
 }
 
+/* Product description styling */
 .product-details p {
     font-size: 15px;
     line-height: 22px;
@@ -99,23 +104,27 @@ a {
     color: #ccc;
 }
 
+/* Styling for the bottom section of the product card */
 .product-bottom-details {
     overflow: hidden;
     border-top: 1px solid #eee;
     padding-top: 20px;
 }
 
+/* Div elements inside product bottom section, each taking 50% width */
 .product-bottom-details div {
     float: left;
     width: 50%;
 }
 
+/* Price styling */
 .product-price {
     font-size: 18px;
     color: #fbb72c;
     font-weight: 600;
 }
 
+/* Styling for discounted price in the product card */
 .product-price small {
     font-size: 80%;
     font-weight: 400;
@@ -124,10 +133,12 @@ a {
     margin-right: 5px;
 }
 
+/* Container for product links such as add to cart */
 .product-links {
     text-align: right;
 }
 
+/* Links in the product card (e.g., add to cart) */
 .product-links a {
     display: inline-block;
     margin-left: 5px;
@@ -136,6 +147,7 @@ a {
     font-size: 17px;
 }
 
+/* Hover effect for the product links */
 .product-links a:hover {
     color: #fbb72c;
 }

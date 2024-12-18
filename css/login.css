@@ -1,3 +1,4 @@
+/* Body Styling */
 body {
     margin: 0;
     padding: 0;
@@ -9,6 +10,7 @@ body {
     background: linear-gradient(to bottom, #3a373f, #232126, #1e1d20);
 }
 
+/* Main Container Styling */
 .main {
     width: 350px;
     height: 500px;
@@ -19,16 +21,19 @@ body {
     box-shadow: 5px 20px 50px #000;
 }
 
+/* Hidden Checkbox for Toggle */
 #chk {
     display: none;
 }
 
+/* Signup Form Styling */
 .signup {
     position: relative;
     width: 100%;
     height: 100%;
 }
 
+/* Label Styling */
 label {
     color: #fff;
     font-size: 2.3em;
@@ -40,6 +45,7 @@ label {
     transition: .5s ease-in-out;
 }
 
+/* Input Field Styling */
 input {
     width: 60%;
     height: 10px;
@@ -53,6 +59,7 @@ input {
     border-radius: 5px;
 }
 
+/* Button Styling */
 button {
     width: 60%;
     height: 40px;
@@ -71,10 +78,12 @@ button {
     cursor: pointer;
 }
 
+/* Button Hover Effect */
 button:hover {
     background: #eca049;
 }
 
+/* Login Form Styling */
 .login {
     height: 460px;
     background: #eee;
@@ -83,11 +92,13 @@ button:hover {
     transition: .8s ease-in-out;
 }
 
+/* Label inside Login Form */
 .login label {
     color: #eca049;
     transform: scale(.6);
 }
 
+/* Toggle Checkbox Styling */
 #chk:checked~.login {
     transform: translateY(-500px);
 }

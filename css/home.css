@@ -1,52 +1,44 @@
 /* Background Styling */
 body {
-    /* Sets the background image for the entire webpage */
     background-image: url(https://i.postimg.cc/YSZbGZZ5/photo-2023-08-13-15-02-45.jpg);
 }
 
 /* Highlighting the Active Navigation Link */
 .container .nav .nav-items ul .home a {
-    color: #eca049; /* Active link color */
-    
-    /* Text shadow for a glowing effect */
-    text-shadow: 0px 3px 8px #eca049; /* Outer glow */
-    text-shadow: 1px 1px 2px #232126; /* Inner shadow for depth */
-    
-    text-decoration: none; /* Removes underline from the link */
+    color: #eca049;
+    text-shadow: 0px 3px 8px #eca049;
+    text-shadow: 1px 1px 2px #232126;
+    text-decoration: none;
 }
 
 /* Page Body Content Styling */
 .container .body {
-    padding: 180px 90px 50px 60px; /* Top, Right, Bottom, Left padding */
-    width: 60%; /* Sets width relative to the parent container */
+    padding: 180px 90px 50px 60px;
+    width: 60%;
 }
 
 /* Main Heading Styling */
 .container .body h1 {
-    font-size: 65px; /* Large font size for emphasis */
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Font stack for compatibility */
-    margin-bottom: 20px; /* Space below the heading */
-    text-transform: uppercase; /* Makes all text uppercase */
-    width: 90%; /* Adjusts heading width */
+    font-size: 65px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    width: 90%;
 }
 
 /* Paragraph Text Styling */
 .container .body p {
-    margin-bottom: 35px; /* Space below the paragraph */
-    margin-left: 10px; /* Indentation from the left */
-    width: 90%; /* Width adjustment for better readability */
+    margin-bottom: 35px;
+    margin-left: 10px;
+    width: 90%;
 }
 
 /* Call-to-Action Button Styling */
 .container .body button {
-    padding: 18px 40px; /* Button padding for size */
-    margin-left: 200px; /* Indentation from the left */
-    margin-top: 50px; /* Space from the top */
-    
-    /* Button Appearance */
-    background-color: #eca049; /* Button background color */
-    color: white; /* Text color */
-    
-    /* Button Shadow for Depth */
-    box-shadow: 4px 6px 17px 2px #ac6031; /* Creates a lifted effect */
+    padding: 18px 40px;
+    margin-left: 200px;
+    margin-top: 50px;
+    background-color: #eca049;
+    color: white;
+    box-shadow: 4px 6px 17px 2px #ac6031;
 }

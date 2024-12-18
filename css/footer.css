@@ -54,21 +54,3 @@ footer {
 .social a:hover {
     background-color: #222;
 }
-
-/* Responsive Adjustments */
-@media (max-width: 600px) {
-    footer {
-        flex-direction: column;
-        height: auto;
-        text-align: center;
-    }
-
-    .copyright p {
-        margin-bottom: 1em;
-    }
-
-    .social a {
-        display: block;
-        margin: 0.5em 0;
-    }
-}

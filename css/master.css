@@ -1,8 +1,8 @@
 /* Reset and Global Styles */
 * {
-    box-sizing: border-box; /* Includes padding and borders in width/height calculations */
-    margin: 0; /* Removes default margin */
-    padding: 0; /* Removes default padding */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 /* Smooth Scrolling */
@@ -12,113 +12,113 @@ html {
 
 /* Body Styling */
 body {
-    background-color: black; /* Background color for the page */
-    height: 100%; /* Full viewport height */
-    width: 100%; /* Full viewport width */
-    background-repeat: no-repeat; /* Prevent background repetition */
-    background-size: cover; /* Covers entire background area */
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* Main Container Styling */
 .container {
-    margin: 0 auto; /* Center the container */
-    color: white; /* Default text color */
-    font-family: Arial, Helvetica, sans-serif; /* Default font */
-    text-transform: capitalize; /* Capitalize all text */
+    margin: 0 auto;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
 }
 
 /* Navigation Bar Styling */
 .container .nav {
-    width: 100%; /* Full width */
-    display: flex; /* Flex layout for alignment */
-    align-items: center; /* Center items vertically */
-    padding: 20px 0; /* Vertical padding */
-    border-bottom: 2px solid rgba(255, 255, 255, 0.3); /* Semi-transparent border */
-    backdrop-filter: blur(3px); /* Background blur effect */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(3px);
     position: fixed;
     top: 0;
 }
 
 /* Logo Styling */
 .container .nav .nav-logo img {
-    margin: 0 400px 0 65px; /* Margins for placement */
-    width: 45px; /* Logo width */
-    height: 45px; /* Logo height */
-    border-radius: 50%; /* Rounded logo */
-    cursor: pointer; /* Pointer on hover */
+    margin: 0 400px 0 65px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
 }
 
 /* Navigation Menu Styling */
 .container .nav .nav-items ul {
-    list-style-type: none; /* Removes bullets */
-    margin-right: 320px; /* Pushes menu left */
-    display: flex; /* Horizontal layout */
+    list-style-type: none;
+    margin-right: 320px;
+    display: flex;
 }
 
 /* Navigation Links Styling */
 .container .nav .nav-items ul li {
-    margin-right: 20px; /* Space between links */
-    padding: 6px 5px; /* Padding for clickable area */
-    color: #232126; /* Initial link color */
-    font-family: math; /* Font style */
-    font-weight: bold; /* Bold text */
-    font-size: 18px; /* Font size */
-    cursor: pointer; /* Pointer on hover */
-    transition: all 0.2s ease-in-out; /* Animation on hover */
+    margin-right: 20px;
+    padding: 6px 5px;
+    color: #232126;
+    font-family: math;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
 }
 
 /* Active Link Styles */
 .container .nav .nav-items ul li a {
-    color: white; /* White text */
-    text-decoration: none; /* Removes underline */
+    color: white;
+    text-decoration: none;
     font-size: 20px;
 }
 
 /* Hover Effect for Links */
 .container .nav .nav-items ul li a:hover {
-    color: #eca049; /* Hover color */
-    border-bottom: 1px solid #eca049; /* Bottom border on hover */
-    padding-bottom: 5px; /* Adjusts padding for effect */
-    opacity: 0.8; /* Slight transparency */
-    border-radius: 3px; /* Rounded corners */
+    color: #eca049;
+    border-bottom: 1px solid #eca049;
+    padding-bottom: 5px;
+    opacity: 0.8;
+    border-radius: 3px;
 }
 
 /* Navigation Icons Styling */
 .container .nav .nav-icons i {
-    margin-right: 15px; /* Space between icons */
-    cursor: pointer; /* Pointer on hover */
+    margin-right: 15px;
+    cursor: pointer;
     font-size: 22px;
     color: white;
 }
 
 .nav-icons i:hover {
-    color: #c28b15; /* Change color to match the theme */
-    transform: scale(1.2); /* Slightly enlarge the icon */
+    color: #c28b15;
+    transform: scale(1.2);
 }
 
 /* Active icon style (example for the "user" icon) */
 .nav-icons #active {
-    color: #eca049; /* Highlight the active icon */
-    font-size: 28px; /* Slightly larger size for active */
+    color: #eca049;
+    font-size: 28px;
 }
 
 /* Button Styling in the Page Body */
 .container .body button {
-    border: none; /* Removes button border */
-    padding: 12px 50px; /* Button padding */
-    border-radius: 16px; /* Rounded corners */
-    background-color: #232126; /* Button background color */
-    color: white; /* Text color */
-    font-weight: bold; /* Bold text */
-    font-size: 17px; /* Font size */
-    text-transform: capitalize; /* Capitalizes text */
-    box-shadow: 2px 4px 15px -1px #232126; /* Box shadow effect */
-    transition: all 0.1s ease-in-out; /* Animation effect */
-    cursor: pointer; /* Pointer on hover */
+    border: none;
+    padding: 12px 50px;
+    border-radius: 16px;
+    background-color: #232126;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    text-transform: capitalize;
+    box-shadow: 2px 4px 15px -1px #232126;
+    transition: all 0.1s ease-in-out;
+    cursor: pointer;
 }
 
 /* Button Hover Effect */
 .container .body button:hover {
-    background-color: black; /* Dark background */
-    border: 1px solid white; /* White border on hover */
+    background-color: black;
+    border: 1px solid white;
 }
