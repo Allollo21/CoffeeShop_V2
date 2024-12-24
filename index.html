@@ -1,63 +1,82 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Login & Registration</title>
-    <!-- Favicon for the website -->
+
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Home</title> <!-- Document Title -->
+
+    <!-- Favicon (Browser Tab Icon) -->
     <link rel="icon" href="https://i.postimg.cc/Jn3wNvv2/Beige-Brown-Minimal-Coffee-Logo.png">
-    <!-- Link to external CSS file -->
-    <link rel="stylesheet" href="css/login.css">
+
+    <!-- CSS Files Linking -->
+    <link rel="stylesheet" href="css/master.css"> <!-- General Styles -->
+    <link rel="stylesheet" href="css/home.css"> <!-- Page-Specific Styles -->
+    <link rel="stylesheet" href="css/footer.css"> <!-- Footer Styles -->
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 
 <body>
+    <!-- Main Container -->
+    <div class="container">
 
-    <!-- Main container for login and registration forms -->
-    <div class="main">
-        <!-- Checkbox used for toggling between forms -->
-        <input type="checkbox" id="chk" aria-hidden="true">
+        <!-- Navigation Bar -->
+        <div class="nav">
 
-        <!-- Registration Form Section -->
-        <div class="signup">
-            <form action="home.html" method="get">
-                <!-- Form heading -->
-                <label for="chk" aria-hidden="true">Sign up</label>
+            <!-- Logo Section -->
+            <div class="nav-logo">
+                <img src="https://i.postimg.cc/Jn3wNvv2/Beige-Brown-Minimal-Coffee-Logo.png" alt="Logo">
+            </div>
 
-                <!-- Username input field -->
-                <input type="text" name="username" placeholder="Username" required>
+            <!-- Navigation Menu -->
+            <div class="nav-items">
+                <ul>
+                    <!-- Navigation Links -->
+                    <li class="home"><a href="index.html">home</a></li>
+                    <li class="about"><a href="about.html">about</a></li>
+                    <li class="menu"><a href="menu.html">menu</a></li>
+                    <li class="products"><a href="products.html">products</a></li>
+                    <li class="contact"><a href="contact.html">contact</a></li>
+                    <li class="blogs"><a href="blogs.html">blogs</a></li>
+                </ul>
+            </div>
 
-                <!-- Email input field -->
-                <input type="email" name="email" placeholder="Email" required>
-
-                <!-- Phone number input field with validation pattern -->
-                <input type="tel" name="phone" placeholder="Phone Number" required pattern="[0-9]{11}">
-
-                <!-- Password input field -->
-                <input type="password" name="password" placeholder="Password" required>
-
-                <!-- Submit button for registration -->
-                <button type="submit">Sign up</button>
-            </form>
+            <!-- Navigation Icons -->
+            <div class="nav-icons">
+                <i class="fa-solid fa-magnifying-glass"></i> <!-- Search Icon -->
+                <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a> <!-- Cart Icon -->
+                <a href="login.html"><i class="fa-solid fa-user"></i></a> <!-- User Profile Icon -->
+            </div>
         </div>
 
-        <!-- Login Form Section -->
-        <div class="login">
-            <form action="home.html" method="get">
-                <!-- Form heading -->
-                <label for="chk" aria-hidden="true">Login</label>
-
-                <!-- Email input field -->
-                <input type="email" name="email" placeholder="Email" required>
-
-                <!-- Password input field -->
-                <input type="password" name="password" placeholder="Password" required>
-
-                <!-- Submit button for login -->
-                <button type="submit">Login</button>
-            </form>
+        <!-- Page Body Content -->
+        <div class="body">
+            <h1>fresh coffee in the morning</h1> <!-- Main Heading -->
+            <p>
+                lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae sit similique ullam necessitatibus
+                commodi, cumque maiores dolore, quasi, fuga maxime voluptatum delectus iste eum expedita neque a
+                quibusdam in minima.
+            </p>
+            <a href="menu.html"><button>get yours now</button></a> <!-- Call-to-Action Button -->
         </div>
+
+        <!-- Footer Section -->
+        <footer>
+            <div class="copyright">
+                <p>&copy; 2013 - Organisation</p> <!-- Copyright Notice -->
+            </div>
+            <div class="social">
+                <a href="contact.html" class="support">Contact Us</a> <!-- Contact Link -->
+                <a href="#" class="face">f</a> <!-- Facebook Link -->
+                <a href="#" class="tweet">x</a> <!-- Twitter Link -->
+                <a href="#" class="linked">in</a> <!-- LinkedIn Link -->
+            </div>
+        </footer>
 
     </div>
-
 </body>
 
 </html>
